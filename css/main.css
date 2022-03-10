@@ -1,1 +1,57 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ECEBDA;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+body:before {
+  content: '';
+  position: absolute;
+  left: 12%;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  height: 100vh;
+  top: 0;
+}
+
+.container {
+  margin-left: -10%;
+}
+
+.title {
+  font-family: 'Six Caps', sans-serif;
+  font-size: 10rem;
+  line-height: 10.5rem;
+  pointer-events: none;
+  position: relative;
+}
+
+.title:before {
+  content: '';
+  position: absolute;
+  width: 10%;
+  height: 3px;
+  background: black;
+  left: -19%;
+  top: 15%;
+}
+
+.title .title-2, .title .title-3 {
+  position: relative;
+  z-index: 2;
+}
+
+p {
+  font-family: 'Playfair Display SC', sans-serif;
+  font-size: 1.5rem;
+  margin-top: 2em;
+}
+/*# sourceMappingURL=main.css.map */
