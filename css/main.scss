@@ -64,3 +64,13 @@ p {
     opacity: .17;
     right: 0;
 }
+
+.img {
+    position: absolute;
+    width: 16em;
+    height: 25em;
+    top: 30%;
+    left: 30%;
+    z-index: 1;
+    background: green;
+}
