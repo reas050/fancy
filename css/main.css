@@ -23,7 +23,7 @@ body:before {
 }
 
 .container {
-  margin-left: -20%;
+  margin-left: -50%;
 }
 
 .title {
@@ -57,7 +57,7 @@ p {
 
 .waterbg {
   position: absolute;
-  width: 40%;
+  width: 30%;
   height: 100vh;
   z-index: -1;
   background: url("https://assets.codepen.io/2621168/girl.jpg");
