@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #ECEBDA;
+  background: #ECEBDA;
   display: -ms-grid;
   display: grid;
   place-content: center;
@@ -23,7 +23,7 @@ body:before {
 }
 
 .container {
-  margin-left: -10%;
+  margin-left: -20%;
 }
 
 .title {
@@ -40,7 +40,7 @@ body:before {
   width: 10%;
   height: 3px;
   background: black;
-  left: -19%;
+  left: -15%;
   top: 15%;
 }
 
@@ -50,31 +50,32 @@ body:before {
 }
 
 p {
-  font-family: 'Playfair Display SC', sans-serif;
+  font-family: 'Playfair Display SC', serif;
   font-size: 1.5rem;
   margin-top: 2em;
 }
 
 .waterbg {
   position: absolute;
-  width: 30%;
+  width: 40%;
   height: 100vh;
   z-index: -1;
-  background: url("../assets/girl.jpg");
+  background: url("https://assets.codepen.io/2621168/girl.jpg");
   background-size: cover;
   mix-blend-mode: luminosity;
-  opacity: .17;
+  opacity: 0.17;
   right: 0;
 }
 
 .img {
   position: absolute;
   width: 16em;
-  height: 25em;
+  height: 27em;
   top: 30%;
   left: 30%;
   z-index: 1;
-  background: green;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
 
 .cursor {
@@ -83,7 +84,20 @@ p {
   height: 3em;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.4);
-  margin-left: 1.5em;
+  margin-left: -1.5em;
   margin-top: -1.5em;
+}
+
+.letter {
+  display: inline-block;
+  line-height: 1em;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+.img:hover {
+  opacity: .5;
 }
 /*# sourceMappingURL=main.css.map */
