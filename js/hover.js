@@ -23,9 +23,9 @@ tl.to('.img', {clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', ease: Back.e
 var myAnimation = new hoverEffect({
     parent: document.querySelector('.img'),
     intensity: 0.3,
-    image1: '../assets/abstract1.jpg',
-    image2: '../assets/abstract2.jpg',
-    displacementImage: '../assets/dis.jpg'
+    image1: 'assets/abstract1.jpg',
+    image2: 'assets/abstract2.jpg',
+    displacementImage: 'assets/dis.jpg'
 });
 
 let title = document.querySelector('.container');
